@@ -1,4 +1,4 @@
-# Personal Portfolio - Gabriel Guerra Samorano Pires
+# Personal Portfolio 
 
 This is a personal portfolio project built using the Model-View-Controller (MVC) architecture pattern, implemented with pure HTML, CSS, and JavaScript. The purpose of this project is to demonstrate a clean, efficient, and modular structure for building a web portfolio that showcases an individual’s work and skills.
 
@@ -16,8 +16,7 @@ This portfolio serves as a static webpage that is designed to present a user’s
 - **MVC Architecture**: Used to separate concerns between data (Model), user interface (View), and application logic (Controller).
 - **Responsive Design**: Ensures the portfolio works well on various screen sizes and devices.
   
-# Portfólio Pessoal - Gabriel Guerra Samorano Pires
-
+# Portfólio Pessoal 
 Este é um projeto de portfólio pessoal desenvolvido utilizando o padrão de arquitetura Model-View-Controller (MVC), implementado com HTML, CSS e JavaScript puros. O objetivo deste projeto é demonstrar uma estrutura limpa, eficiente e modular para construir um portfólio web que exiba o trabalho e as habilidades de um indivíduo.
 
 ## Visão Geral do Projeto
