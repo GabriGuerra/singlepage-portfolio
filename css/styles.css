@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    background: #f4f6f9;
+    color: #333;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background: rgba(20, 20, 20, 0.95);
+    color: white;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 60px;
+    flex-direction: row;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f39c12;
+    margin-right: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #00A9FF;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 169, 255, 0.5);
+}
+
+main {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.contact-info{
+    text-align: justify;
+}
+
+.profile {
+    background: #1e293b;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #f39c12;
+}
+
+.profile h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.skills, .projects, .recommendations {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #333;
+    font-weight: 600;
+}
+
+.card {
+    background: #fff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+#recommendation-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 15px 0; /* Remover centralização */
+    float: left; /* Alinha o formulário à esquerda */
+}
+
+#recommendation-form input, #recommendation-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#recommendation-form button {
+    background: #f39c12;
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#recommendation-form button:hover {
+    background: #e67e22;
+}
+
+#home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    font-size: 20px;
+    padding: 12px 18px;
+    border-radius: 50%;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#home-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.1); /* Efeito de crescimento ao passar o mouse */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Sombras mais intensas */
+}
+
+#home-button:focus {
+    outline: none;
+}
+
+#home-button span {
+    font-size: 18px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card {
+        font-size: 13px;
+    }
+}

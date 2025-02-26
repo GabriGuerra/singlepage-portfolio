@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Gabriel Guerra Samorano Pires</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Estilos do SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Gabriel Guerra Samorano Pires</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li> <!-- Link atualizado para o novo ID -->
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Featured Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <img src="assets/profile.jpg" alt="Photo of Gabriel Guerra Samorano Pires">
+            <h1>Gabriel Guerra Samorano Pires</h1>
+            <p>Full-Stack Developer</p>
+            <div class="contact-info">
+                <ul>
+                    <li><strong>📍</strong> Curitiba, PR</li>
+                    <li><strong>📞</strong> (41) 98823-4241</li>
+                    <li><strong>✉️</strong> gb.guerra@icloud.com</li>
+                    <li><strong>🔗</strong> <a href="https://www.linkedin.com/in/gabgsp" target="_blank">LinkedIn</a></li>
+                    <li><strong>🖥️</strong> <a href="https://github.com/GabriGuerra" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content">
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>My name is <strong>Gabriel Guerra</strong>, and I am a Full-Stack Developer passionate about technology, using some of my own information for demonstration purposes.</p>
+                <p>I hold a degree in <strong>System Analysis and Development</strong> from the <strong>Federal University of Paraná (UFPR)</strong> and have experience in <strong>Java, .NET, JavaScript</strong>, and both relational and NoSQL databases. Additionally, I am fluent in <strong>English</strong> and <strong>French</strong>. I am also currently pursuing a <strong>Data Science post-degree</strong>.</p>
+
+                <h3>Portfolio Structure</h3>
+                <p>The structure of the portfolio is divided into three main parts:</p>
+                <ul>
+                    <li><strong>Model</strong>: Responsible for managing the data and logic of the application, including handling user recommendations.</li>
+                    <li><strong>View</strong>: Presents the user interface, with sections such as "About Me", "Skills", "Projects", and "Recommendations".</li>
+                    <li><strong>Controller</strong>: Manages interactions between the user and the application, such as submitting recommendations and smoothly scrolling to the top of the page.</li>
+                </ul>
+
+                <h3>Interactive Features</h3>
+                <p>The website includes interactive features, such as allowing visitors to submit recommendations, providing a dynamic way to gather feedback and additional information. The layout is responsive, ensuring a seamless experience on both desktop and mobile devices.</p>
+
+                <h3>Customizable Design</h3>
+                <p>The information displayed, such as my name and skills, is based on my own references and is used only for layout and demonstration purposes. This makes the portfolio easily adaptable and customizable by other users or for future versions.</p>
+
+                <h3>Web Development Practices</h3>
+                <p>This portfolio not only serves as a showcase of my work but also as a demonstration of good web development practices, using a simple and efficient approach with pure JavaScript.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="card">🔹 Java, Java EE, JavaScript (React, Angular, Vue.js)</div>
+                    <div class="card">🔹 Databases: MySQL, SQL Server, Oracle DB, NoSQL</div>
+                    <div class="card">🔹 Frameworks and Tools: Bootstrap, Spark, GIT</div>
+                    <div class="card">🔹 Full Microsoft Office Suite</div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Featured Projects</h2>
+                <div class="projects-container">
+                    <div class="card">
+                        <a href="https://github.com/GabriGuerra/cwbhouseplants-ecommerce" target="_blank">
+                            📌 CWB Houseplants Ecommerce
+                        </a>
+                        <p>An e-commerce platform for plant lovers, built with React.js, Redux, and Bootstrap, allowing users to browse plants, manage their shopping cart, and proceed to checkout.</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/GabriGuerra/travel-recommendation" target="_blank">
+                            📌 Travel Recommendation System
+                        </a>
+                        <p>A web app that dynamically recommends personalized travel destinations based on user preferences using plain JavaScript and APIs.</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/GabriGuerra/sistema-juridico" target="_blank">
+                            📌 Legal System Management
+                        </a>
+                        <p>A legal system that connects lawyers, judges, and judicial officers to manage lawsuits, built using Java EE, RESTful APIs, MVC, and MySQL.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recommendations">
+                <h2>Recommendations</h2>
+                <div class="recommendations-container">
+                    <!-- Recomendações vão aparecer aqui dinamicamente -->
+                </div>
+                <div id="recommendation-form">
+                    <h3>Submit Your Recommendation:</h3>
+                    <div>
+                        <input type="text" id="recommendation-name" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <textarea id="recommendation-text" placeholder="Your Recommendation" required></textarea>
+                    </div>
+                    <div>
+                        <button class="btn">Submit Recommendation</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Developed by Gabriel Guerra Samorano Pires. <a href="mailto:gb.guerra@icloud.com">Contact</a></p>
+    </footer>
+
+    <button id="home-button" onclick="scrollToTop()">↑</button>
+
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- SweetAlert2 Script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
